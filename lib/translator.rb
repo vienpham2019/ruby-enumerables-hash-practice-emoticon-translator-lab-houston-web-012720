@@ -29,4 +29,8 @@ def get_english_meaning(path,emoticon)
   binding.pry
   # code goes here
   my_data = load_library(path)
+  if my_data["get_meaning"][emoticon]
+    my_data["get_meaning"][emoticon]
+  else
+    ""
 end
