@@ -15,16 +15,17 @@ def load_library(path)
   new_hash
 end
   
-def get_japanese_emoticon(path,emoticons)
+def get_japanese_emoticon(path,emoticon)
   # code goes here
   my_data = load_library(path)
-  if my_data["get_emoticon"][emoticons]
-    my_data["get_emoticon"][emoticons]
+  if my_data["get_emoticon"][emoticon]
+    my_data["get_emoticon"][emoticon]
   else
-    "Sorry, that emoticons was not found"
+    "Sorry, that emoticon was not found"
   end
 end
 
-def get_english_meaning
+def get_english_meaning(path,emoticon)
   # code goes here
+  my_data = load_library(path)
 end
