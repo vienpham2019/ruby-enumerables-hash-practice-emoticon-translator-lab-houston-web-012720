@@ -20,6 +20,10 @@ def get_japanese_emoticon(path,emoticons)
   # code goes here
   my_data = load_library(path)
   if my_data["get_emoticon"][emoticons]
+    my_data["get_emoticon"][emoticons]
+  else
+    "Sorry, that emoticons was not found"
+  end
 end
 
 def get_english_meaning
