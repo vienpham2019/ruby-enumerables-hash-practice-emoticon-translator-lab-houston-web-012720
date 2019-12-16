@@ -16,7 +16,6 @@ def load_library(path)
 end
   
 def get_japanese_emoticon(path,emoticons)
-  binding.pry
   # code goes here
   my_data = load_library(path)
   if my_data["get_emoticon"][emoticons]
